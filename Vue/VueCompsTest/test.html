@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Компоненты Vue.js</title>
+<meta charset="utf-8" />
+</head>
+<body>
+<div id="app">
+    <section-header></section-header>
+    <section-content></section-content>
+</div>
+<script src="https://unpkg.com/vue@2.7.14/dist/vue.js"></script>
+<script>
+Vue.component('section-header',{
+    template:'<h3>Header</h3>'
+});
+var comp = {
+    template:'<div>Hello World</div>'
+};
+ 
+new Vue({
+    el: "#app",
+    components:{
+        'section-content':comp
+    }
+});
+</script>
+</body>
+</html>

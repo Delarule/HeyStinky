@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Событийный сайт</title>
+</head>
+<body>
+    <h1>Музей интерактивных деталей</h1>
+    <div id="elm1">
+        <h1>{{count}}</h1>
+        <button v-on:click="countUp"class="btn">+2</button>
+        <button v-on:click="countDown"class="btn">-2</button>
+        <button v-on:click="Reset"class="btn">Reset</button>
+         <button v-on:click="DONOTPUSH"class="btn">DONT PUSH!</button>
+         <button v-on:click="Wk"class="btn">I work!</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="EVENTERJS.js"></script>
+</body>
+</html>
