@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="rus" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+class Obj {
+    static com1 = "Свойство";
+  static staticMethod() {
+    alert(this === Obj);
+  }
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    alert(this.name);
+  }
+  name = "Joh";
+
+  sayHii() {
+    alert(`Это, ${this.name}!`);
+  }
+}
+alert( Obj.com1 );
+Obj.staticMethod();
+let user = new Obj("Свойство1");
+user.sayHi();
+new Obj().sayHii();
+
+class Obj1 {
+    static com1 = "Свойство";
+  static _staticMethod() {
+    alert(this === Obj1);
+  }
+  constructor(_name) {
+    this._name = name;
+  }
+
+  sayHi() {
+    alert(this._name);
+  }
+  _name = "Joh";
+
+  sayHii() {
+    alert(`Это, ${this._name}!`);
+  }
+}
+alert( Obj1.com1 );
+Obj1._staticMethod();
+let user = new Obj1("Свойство1");
+user.sayHi();
+new Obj1().sayHii();
+
+class Obj3 {
+    static com1 = "Свойство";
+  static #staticMethod() {
+    alert(this === Obj3);
+  }
+  constructor(#name) {
+    this.#name = name;
+  }
+
+  sayHi() {
+    alert(this.#name);
+  }
+  name = "Joh";
+
+  sayHii() {
+    alert(`Это, ${this.name}!`);
+  }
+}
+alert( Obj3.com1 );
+Obj3.#staticMethod();
+let user = new Obj3("Свойство1");
+user.sayHi();
+new Obj3().sayHii();
+    
+</script>
+</body>
+</html>

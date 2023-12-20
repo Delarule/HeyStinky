@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="rus" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+try {
+  KibiFunction()
+} catch (erra) {
+  console.log('Ошибка:', erra.name)
+  console.log('Ошибка:', erra.message)
+  console.log('Ошибка:', erra.stack)
+}
+try {
+  let arr = new Array(100000000000000)
+} catch (erro) {
+  console.log('Ошибка:', erro.name)
+  console.log('Ошибка:', erro.message)
+  console.log('Ошибка:', erro.stack)
+  console.log(arr)
+}
+
+</script>
+</body>
+</html>

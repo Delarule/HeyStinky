@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="rus" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<script>
+class Obj1 {
+    constructor(name){
+        this.clas = 'warrior';
+        this.name = name;
+    }
+    run(power){
+        this.power = power;
+        alert(`${this.name} You are ${this.clas}.`)
+    }
+    stop() {
+    this.speed = 0;
+    alert(`${this.name} are mighty.`);
+    }
+}
+class Obj2 extends Obj1 {
+    hide() {
+    alert(`${this.name} grab his mighty sword`);
+  }
+  stop() {
+    super.stop(); 
+    this.hide();
+  }
+}
+let Obj = new Obj2("Legendary warrior");
+Obj.run('warrior'); 
+Obj.stop();
+
+
+</script>
+</body>
+</html>

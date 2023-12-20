@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+  let son = {
+  name: 'John',
+};
+let dad = {
+  name: 'Johnson',
+}
+
+son.dad = dad;
+dad.son = son;
+dad = null;
+son = null;
+console.log(dad);
+console.log(son);
+    </script>
+</body>
+</html>
