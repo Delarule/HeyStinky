@@ -1,0 +1,40 @@
+* {
+    font-family: 'Gilroy', sans-serif;
+    transition: 0.3s all;
+    font-weight: 600;
+}
+#app{
+    width:200px;
+    box-shadow: 0.3px 15px blueviolet;
+}
+input[type="text"]{
+    width:200px;
+    border: 0;
+    color: #323232;
+    font-size:18px;
+    padding:5px 5px;
+    text-align:right;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cell{
+    flex:33%;
+    height:50%;
+    font-size:18px;
+    border:none;
+}
+.num{
+    background-color:#333;
+    color:#fff;
+    font-weight:400;
+}
+.cell:hover{
+    background-color: azure;
+}
+.op{
+    background-color:#ff9900;
+    color:#323232;
+}
