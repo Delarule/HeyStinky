@@ -1,0 +1,6 @@
+.nav__bar_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
