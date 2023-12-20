@@ -1,0 +1,44 @@
+.header{
+    border: 1px solid black;
+   width: auto;
+    height: 100px;
+    background-color: grey;
+    text-align: center;
+}
+.super-flex{
+    display:flex;
+    flex-direction: row;
+    width: auto;
+    height: 600px;
+}
+.copycat{
+border: 1px solid black;
+   width: 120px;
+    height: auto;
+    order: auto;
+    background-color: darkgrey;
+}
+.Slowdo{
+border: 1px solid black;
+   width: 2000px;
+    height: auto;
+    background-color: lightgray;
+    
+}
+.Terminous{
+    border: 1px solid black;
+   width: auto;
+    height: 90px;
+    background-color: grey;
+    text-align: center;
+}
+.img{
+     background-image: url("https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663249676_62-mykaleidoscope-ru-p-sovremennie-zdaniya-vkontakte-66.jpg");
+  width: 600px;
+  height: 400px;
+}
+.text{
+    column-count: 1;
+    column-width:20;
+    justify-content: right;
+}

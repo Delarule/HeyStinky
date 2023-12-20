@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pkjo</title>
+    <link rel="stylesheet" href="Style-1.css">
+</head>
+<body>
+    <script>
+      let accessAllowed;
+let age = prompt('Сколько вам лет?', '');
+
+if (age > 18) {
+  accessAllowed = 'Входите';
+} else {
+  accessAllowed = 'Уходите';
+  window.close()
+}
+
+alert(accessAllowed);
+    </script>
+    <div class="header">
+<h1>Проэкт по обработке данных головы</h1>
+    </div>
+    <div class="super-flex">
+            <div class="copycat">
+                <a href="">Меню</a>
+
+                <a href="">О проэкте</a>
+
+                <a href="">Задача проэкта</a>
+
+                <a href="">Фуекции проэкта</a>
+            </div>
+    <div class="Slowdo">
+        <h3>Мы организация отвечающая за обработку информации из сознания людей, мы работаем с 1967 года.</h3>
+        <div class="img"> </div>
+        <div class="text">
+            <p>Мы предоставляем услуги которые помогут избавится вам от тревожностей и болей в голове, укажите почту ниже для получения подробностей услуг.</p>
+            <form novalidate>
+              <div>Ваш логин почты</div>
+  <input type="text" name="name" required>
+  <div>Принадлежность к почте</div>
+  <input type="email" name="email" required>
+  <button type="submit">Отправить показания</button>
+</form>
+
+<script>
+  class FormError extends Error {
+    constructor(message) {
+      super(message);
+      this.name = 'FormError';
+    }
+  }
+  const elForm = document.querySelector('form');
+  elForm.onsubmit = (e) => {
+    e.preventDefault();
+    elForm.querySelectorAll('input').forEach((el) => {
+      if (!el.checkValidity()) {
+        try {
+          throw new FormError(`[name="${el.name}"] ${el.validationMessage}`);
+        } catch(error) {
+          console.error(`${error.name} ${error.message}`);
+        }
+      }
+    });
+  }
+</script>
+        </div>
+    </div>
+
+    </div>
+    <div class="Terminous">
+<h3>Связаться с нами по номеру +7ХХХХХХХХХХ, наш главный офис, Ул.Б Д13 к4 </h3>
+    </div>
+</body>
+</html>
